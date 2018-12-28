@@ -1,5 +1,5 @@
 {
-  "name": "dashboard-boilerplate-server",
+  "name": "bevg-framework-server",
   "version": "1.0.0",
   "description": "",
   "author": "Jose Naranjo",
@@ -7,7 +7,7 @@
     "dev": "nodemon index.js",
     "prod": "cross-env NODE_ENV=production PORT=8080 node index.js",
     "start": "npm run prod",
-    "deploy": "gcloud config set project dashboard-boilerplate && gcloud app deploy --quiet --version=latest"
+    "deploy": "gcloud config set project bevg-framework && gcloud app deploy --quiet --version=latest"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
