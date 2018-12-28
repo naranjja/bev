@@ -84,6 +84,12 @@
 </template>
 
 <script>
+import axios from "axios"
+
+axios.get("/api/")
+  .then((response) => console.log(response))
+  .catch((err) => console.error(err))
+
 export default {
   name: 'HelloWorld',
   data () {
