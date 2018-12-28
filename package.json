@@ -1,0 +1,18 @@
+{
+  "name": "dashboard-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Jose Naranjo",
+  "scripts": {
+    "install_client": "cd client && npm i",
+    "install_server": "cd server && npm i",
+    "install": "npm run install_client && npm run install_server",
+    "dev": "concurrently --kill-others \"cd server && npm run dev\" \"cd client && npm run dev\"",
+    "build": "cd client && npm run build",
+    "prod": "npm run build && cd server && npm run prod",
+    "deploy": "npm run build && cd server && npm run deploy"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0"
+  }
+}
